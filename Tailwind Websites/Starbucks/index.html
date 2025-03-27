@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starbucks</title>
+    <title>Starbucks Coffee Company</title>
     <link rel="shortcut icon" href="./img/FAVICON LOGO.jpg" type="image/x-icon">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
@@ -27,15 +27,25 @@
                 <li><a href="#">Gift</a></li>
                 <li><a href="#">Order</a></li>
                 <li><a href="#">Pay</a></li>
+                
                 <li><a href="#">Store</a></li>
 
             </ul>
 
           </div>
 
-          <div class="flex items-center gap-24 max-sm:gap-8 max-md:gap-8 max-lg:gap-8">
+          <button id="menu-btn" class="max-sm:flex max-md:flex max-lg:flex max-xl:flex max-sm:ml-150 max-md:ml-150 max-lg:ml-175 max-lg:mb-1 hidden text-3xl">☰</button>
 
-            <svg xmlns="http://www.w3.org/2000/svg" class="hidden max-sm:flex max-md:flex max-lg:flex" width="35" height="35" viewBox="0 0 24 24"><path fill="#9b9b9b" d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"/></svg>
+          <ul id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-full bg-white flex flex-col gap-6 p-6 shadow-md md:hidden">
+            <button id="close-menu" class="text-3xl self-end">✖</button>
+            <li class="text-green-700 font-semibold"><a href="#">Home</a></li>
+            <li><a href="#">Gift</a></li>
+            <li><a href="#">Order</a></li>
+            <li><a href="#">Pay</a></li>
+            <li><a href="#">Store</a></li>
+        </ul>
+
+          <div class="flex items-center gap-24 max-sm:gap-8 max-md:gap-8 max-lg:gap-8">
 
             <svg xmlns="http://www.w3.org/2000/svg" class="hidden max-sm:flex max-md:flex max-lg:flex" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#716b6b" stroke-linecap="round" stroke-linejoin="round" d="m21 21l-4.343-4.343m0 0A8 8 0 1 0 5.343 5.343a8 8 0 0 0 11.314 11.314" stroke-width="1"/></svg>
 
@@ -50,8 +60,7 @@
           </div>
 
     </nav>
-
-
+   
     <!--Know More - Section -->
     
 
@@ -73,9 +82,9 @@
 
             <div class="max-sm:text-center max-sm:mx-25">
 
-                <h2 class="mt-4 text-[15px] text-white font-medium max-sm:text-4xl max-sm:font-bold">Starbucks</h2>
-                <h1 class="mt-3 text-white font-bold text-[20px] max-sm:text-3xl max-sm:font-medium max-sm:mt-10">Beverage Subscription</h1>
-                <h6 class="text-white mt-3 max-sm:text-2xl max-sm:mt-5">Starbucks Subscription is Back! Sip Your Favourites for Less. Tap for Details. T&C Apply.</h6>
+                <h2 class="mt-4 text-[15px] text-white font-medium max-sm:text-4xl max-sm:font-bold">All New</h2>
+                <h1 class="mt-3 text-white font-bold text-[20px] max-sm:text-3xl max-sm:font-medium max-sm:mt-10">Starbucks Refreshers</h1>
+                <h6 class="text-white mt-3 max-sm:text-2xl max-sm:mt-5">Beat the heat with your bestie, Refreshers now avaiilable in Lychee Raspberry and Kiwi Calamansi flavours. </h6>
 
             </div>
 
@@ -271,9 +280,9 @@
 
                 <div class="text-sm font-semibold max-sm:text-2xl">
 
-                    <img src="./img/2 IMG.webp" alt="" class="w-22 rounded-lg mb-2 max-sm:w-50">
+                    <img src="https://starbucksstatic.cognizantorderserv.com/Items/Small/webP/100501.webp" alt="" class="w-22 rounded-lg mb-2 max-sm:w-50">
 
-                    ₹ 325.50
+                    ₹ 420.00
 
                 </div>
                 
@@ -281,59 +290,11 @@
 
                     <svg xmlns="http://www.w3.org/2000/svg" class="max-sm:w-10 max-sm:h-10 max-sm:leading-3 max-sm:mb-5" width="20" height="20" viewBox="0 0 24 24"><path fill="#00754A" d="M20 4v16H4V4zm2-2H2v20h20zM12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6s6-2.69 6-6s-2.69-6-6-6"/></svg>
 
-                    Signature Hot Chocolate
+                    java chip frappuccino 
 
-                    <h2 class="text-xs font-light max-sm:text-2xl max-sm:mt-2">SHORT(237ml).284 kcal</h2>
+                    <h2 class="text-xs font-light max-sm:text-2xl max-sm:mt-2">TALL(345 ml).392.kcal</h2>
 
                     <button class="bg-[rgb(0,117,74)] text-white text-xs font-semibold rounded-[15px] max-2xl:ml-40 cursor-pointer max-sm:ml-80 py-1.5 px-4 mt-7 ml-45 max-sm:px-5 max-sm:py-2 max-sm:text-2xl hover:bg-green-900">Add Item</button>
-
-                </div>
-
-            </div>
-
-            <div class="p-5 bg-white flex gap-5 drop-shadow-xl rounded-xl py-6 hidden max-sm:flex max-md:flex max-lg:flex max-xl:flex max-sm:w-300 max-md:w-100 max-2xl:w-100 max-sm:px-10 max-sm:gap-15 max-sm:mt-5">
-
-                <div class="text-sm font-semibold max-sm:text-2xl">
-                    
-                    <img src="./img/3 IMG.webp" alt="" class="w-22 rounded-lg mb-2 max-sm:w-50">
-
-                    ₹ 141.75
-
-                </div>
-
-                <div class="font-semibold max-sm:mt-7 max-sm:text-2xl">
-
-                    <svg xmlns="http://www.w3.org/2000/svg" class="max-sm:w-10 max-sm:h-10 max-sm:leading-3 max-sm:mb-5" width="20" height="20" viewBox="0 0 24 24"><path fill="#00754A" d="M20 4v16H4V4zm2-2H2v20h20zM12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6s6-2.69 6-6s-2.69-6-6-6"/></svg>
-
-                    Vanilla Milkshake
-
-                    <h2 class="text-xs font-light max-sm:text-2xl max-sm:mt-2">TALL(354ml).PER SERVE(354ml)-531 kcal</h2>
-
-                    <button class="bg-[rgb(0,117,74)] text-white text-xs font-semibold rounded-[15px] max-2xl:ml-40 cursor-pointer max-sm:ml-80 py-1.5 px-4 max-sm:px-5 max-sm:py-2 max-sm:text-2xl mt-7 ml-45 hover:bg-green-900">Add Item</button>
-
-                </div>
-
-            </div>
-
-            <div class="p-5 bg-white flex gap-5 drop-shadow-xl rounded-xl py-6 hidden max-sm:flex max-md:flex max-lg:flex max-xl:flex max-sm:w-300 max-md:w-100 max-2xl:w-100 max-sm:px-10 max-sm:gap-15 max-sm:mt-5">
-
-                <div class="text-sm font-semibold max-sm:text-2xl">
-
-                    <img src="./img/4 IMG.webp" alt="" class="w-22 rounded-lg mb-2 max-sm:w-50">
-
-                    ₹ 299.25
-
-                </div>
-
-                <div class="font-semibold max-sm:mt-7 max-sm:text-2xl">
-
-                    <svg xmlns="http://www.w3.org/2000/svg" class="max-sm:w-10 max-sm:h-10 max-sm:leading-3 max-sm:mb-5" width="20" height="20" viewBox="0 0 24 24"><path fill="#00754A" d="M20 4v16H4V4zm2-2H2v20h20zM12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6s6-2.69 6-6s-2.69-6-6-6"/></svg>
-
-                    Cold Brew Black
-
-                    <h2 class="text-xs font-light max-sm:text-2xl max-sm:mt-2">SHORT(Short Cold Brew Black).</h2>
-
-                    <button class="bg-[rgb(0,117,74)] text-white text-xs font-semibold rounded-[15px] max-2xl:ml-40 cursor-pointer max-sm:ml-80 py-1.5 px-4 max-sm:px-5 max-sm:py-2 max-sm:text-2xl mt-7 ml-45 hover:bg-green-900">Add Item</button>
 
                 </div>
 
@@ -481,6 +442,10 @@
 
     <!-- END -->
 
-    
+
+    <!-- JS -->
+
+    <script src="SB.js"></script>
+
 </body>
 </html>
