@@ -10,4 +10,4 @@ for (i = 1; i < n; i++) {
         console.log(i);
     }
 }
-    console.log(n);
+    console.log(n);     
