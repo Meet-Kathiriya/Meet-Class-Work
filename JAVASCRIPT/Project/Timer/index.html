@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Timer</title>
+<!-- Tailwind Css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+<!-- Tailwind Css -->
+</head>
+<body class="h-screen flex items-center justify-center bg-gray-300">
+
+  <div class="w-full max-w-md bg-white rounded-xl shadow-md p-6 space-y-6">
+    <div class="text-center text-2xl font-semibold text-gray-700" id="disp">Timer</div>
+
+<!-- Time -->
+    <form class="flex justify-between gap-2">
+        <input 
+        type="number" id="hour" placeholder="Hours" class="w-full text-center border border-gray-300 rounded-md text-2xl py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+        />
+        <input 
+        type="number" id="minute" placeholder="Minutes" class="w-full text-center border border-gray-300 rounded-md text-2xl py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+        />
+        <input 
+        type="number" id="second" placeholder="Second" class="w-full text-center border border-gray-300 rounded-md text-2xl py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+        />
+    </form>
+<!-- Time -->
+
+<!-- Buttons -->
+    <div class="flex justify-between gap-2">
+        <button class="flex-1 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition" id="start">Start</button>
+        <button class="flex-1 py-2 bg-yellow-500 text-white rounded-md hover:bg-yellow-600 transition" id="stop">Stop</button>
+        <button class="flex-1 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 transition" id="reset">Reset</button>
+    </div>
+<!-- Buttons -->
+
+  </div>
+
+<!-- JS -->
+  <script src="app.js"></script>
+<!-- JS -->
+
+</body>
+</html>
