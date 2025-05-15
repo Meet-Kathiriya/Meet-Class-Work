@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+form, #recipeList {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+input, textarea, button {
+  display: block;
+  margin: 8px 0;
+  width: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+.add-btn {
+  background: #42b883;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.search-btn {
+  background: #155263;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#recipeList div {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
